@@ -1,0 +1,38 @@
+
+body{
+    background-color: orange;
+}
+
+
+#road{
+    width: 100%;
+    border-bottom: 2px dotted black;
+}
+#runner{
+    background-image: url("https://i.pinimg.com/originals/e7/0e/7d/e70e7d41a4a2af947f551aa49b1236d2.png");
+    width: 184px;
+    height: 325px;
+   -webkit-animation : walk 1s steps(8) infinite ,
+    forward 5s linear infinite;
+    -webkit-animation-delay: -1s;
+  }
+
+  @-webkit-keyframes walk{
+      0%{
+  background-position: 0;
+      }
+      100%{
+  background-position: 1472px;
+      }
+  }
+
+  @-webkit-keyframes forward{
+      0%{
+   transform: translateX(-100px);
+      }
+      100%{
+  transform: translateX(1200px);
+      }
+  }
+
+ 
